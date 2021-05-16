@@ -1,0 +1,36 @@
+{
+  "name": "@beequeue/project-template",
+  "version": "0.0.0",
+  "author": "BeeeQueue <adam@haglund.dev>",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "pnpm@6.32.3",
+  "engines": {
+    "node": ">=16"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,json5,yaml,yml,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "dev": "dev",
+    "build": "build",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit --project tsconfig.json",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@beequeue/eslint-plugin": "0.5.0",
+    "@tsconfig/node16": "1.0.2",
+    "dotenv": "16.0.0",
+    "eslint": "8.11.0",
+    "lint-staged": "12.3.7",
+    "prettier": "2.6.0",
+    "simple-git-hooks": "2.7.0",
+    "typescript": "4.6.2"
+  }
+}
