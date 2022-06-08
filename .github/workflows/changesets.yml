@@ -6,8 +6,6 @@ on:
       - .changeset/**/*
   workflow_dispatch:
 
-name: CD
-
 jobs:
   changesets:
     runs-on: ubuntu-latest
@@ -21,7 +19,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 16
 
       - run: corepack enable
 

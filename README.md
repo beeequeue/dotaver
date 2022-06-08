@@ -1,5 +1,9 @@
 # `dotaver`
 
+[![npm](https://img.shields.io/npm/v/dotaver)](https://www.npmjs.com/package/dotaver)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/dotaver)
+![node-current](https://img.shields.io/node/v/dotaver)
+
 Semver but for Dota 2 patch versions
 
 ## Usage
