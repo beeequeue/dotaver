@@ -1,5 +1,3 @@
-type PatchType = "major" | "minor" | "patch"
-
 export enum DotaPatchType {
   Major = "major",
   Minor = "minor",
@@ -43,20 +41,20 @@ export class DotaVersion {
     return new DotaVersion(version.major, version.minor, version.patch)
   }
 
-  increment(type: PatchType, backwards?: boolean) {
+  increment(type: DotaPatchType, backwards?: boolean) {
     const newVersion = DotaVersion.from(this)
 
     switch (type) {
-      case "major":
+      case DotaPatchType.Major:
         newVersion.major += !backwards ? 1 : -1
         newVersion.minor = 0
         newVersion.patch = 0
         break
-      case "minor":
+      case DotaPatchType.Minor:
         newVersion.minor += !backwards ? 1 : -1
         newVersion.patch = 0
         break
-      case "patch":
+      case DotaPatchType.Patch:
         newVersion.patch += !backwards ? 1 : -1
         break
     }
