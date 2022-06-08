@@ -1,7 +1,7 @@
 {
   "name": "dotaver",
   "description": "Semver but for Dota 2 patch versions",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
   "private": true,
