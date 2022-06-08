@@ -41,21 +41,21 @@ export class DotaVersion {
     return new DotaVersion(version.major, version.minor, version.patch)
   }
 
-  increment(type: DotaPatchType, backwards?: boolean) {
+  next(type: DotaPatchType) {
     const newVersion = DotaVersion.from(this)
 
     switch (type) {
       case DotaPatchType.Major:
-        newVersion.major += !backwards ? 1 : -1
+        newVersion.major++
         newVersion.minor = 0
         newVersion.patch = 0
         break
       case DotaPatchType.Minor:
-        newVersion.minor += !backwards ? 1 : -1
+        newVersion.minor++
         newVersion.patch = 0
         break
       case DotaPatchType.Patch:
-        newVersion.patch += !backwards ? 1 : -1
+        newVersion.patch++
         break
     }
 

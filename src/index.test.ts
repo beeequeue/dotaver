@@ -69,7 +69,7 @@ describe("toString", () => {
   })
 })
 
-describe("increment", () => {
+describe("next", () => {
   const cases: Array<[input: DotaPatchType, expected: DotaVersion]> = [
     [DotaPatchType.Patch, new DotaVersion(6, 21, 2)],
     [DotaPatchType.Minor, new DotaVersion(6, 22, 0)],
@@ -77,16 +77,6 @@ describe("increment", () => {
   ]
 
   test.each(cases)("%j outputs %s", (input, expected) => {
-    expect(new DotaVersion(6, 21, 1).increment(input)).toEqual(expected)
-  })
-
-  const backwardsCases: Array<[input: DotaPatchType, expected: DotaVersion]> = [
-    [DotaPatchType.Patch, new DotaVersion(6, 21, 0)],
-    [DotaPatchType.Minor, new DotaVersion(6, 20, 0)],
-    [DotaPatchType.Major, new DotaVersion(5, 0, 0)],
-  ]
-
-  test.each(backwardsCases)("backwards %j outputs %s", (input, expected) => {
-    expect(new DotaVersion(6, 21, 1).increment(input, true)).toEqual(expected)
+    expect(new DotaVersion(6, 21, 1).next(input)).toEqual(expected)
   })
 })
