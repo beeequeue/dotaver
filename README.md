@@ -1,5 +1,19 @@
-# Minimal Node/Web Project
+# `dotaver`
 
-This is my minimal template that I use for all my new projects.
+Semver but for Dota 2 patch versions
 
-It has all the editor configurations you might need as well as automatic code formatting on committing.
+## Usage
+
+```shell
+npm i dotaver
+yarn add dotaver
+pnpm i dotaver
+```
+
+```ts
+import { DotaVersion } from "dotaver"
+
+const version = DotaVersion.parse("7.36b")
+
+console.log(version.toString()) // "7.36b"
+```
