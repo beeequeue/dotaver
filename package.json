@@ -1,10 +1,11 @@
 {
-  "name": "@beequeue/project-template",
+  "name": "dotaver",
+  "description": "Semver but for Dota 2 patch versions",
   "version": "0.0.0",
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@6.32.3",
+  "packageManager": "pnpm@7.1.9",
   "engines": {
     "node": ">=16.15"
   },
@@ -17,8 +18,8 @@
     ]
   },
   "scripts": {
-    "dev": "dev",
-    "build": "build",
+    "dev": "tsup --watch",
+    "build": "tsup",
     "lint": "eslint src",
     "typecheck": "tsc --noEmit --project tsconfig.json",
     "prepare": "simple-git-hooks"
@@ -26,11 +27,14 @@
   "devDependencies": {
     "@beequeue/eslint-plugin": "0.6.0",
     "@tsconfig/node16": "1.0.2",
+    "c8": "7.11.3",
     "dotenv": "16.0.1",
     "eslint": "8.17.0",
     "lint-staged": "13.0.1",
     "prettier": "2.6.2",
     "simple-git-hooks": "2.8.0",
-    "typescript": "4.7.3"
+    "tsup": "6.1.0",
+    "typescript": "4.7.3",
+    "vitest": "0.14.1"
   }
 }
