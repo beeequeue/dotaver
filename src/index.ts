@@ -62,6 +62,10 @@ export class DotaVersion {
     return newVersion
   }
 
+  increment(major: number, minor: number, patch: number) {
+    return new DotaVersion(this.major + major, this.minor + minor, this.patch + patch)
+  }
+
   toNumber() {
     return this.major * 10_000 + this.minor * 100 + this.patch
   }
