@@ -1,5 +1,0 @@
----
-"dotaver": major
----
-
-Initial release!
