@@ -16,4 +16,7 @@ import { DotaVersion } from "dotaver"
 const version = DotaVersion.parse("7.36b")
 
 console.log(version.toString()) // "7.36b"
+
+const otherVersion = DotaVersion.parse("7.37")
+console.log(version.compare(otherVersion)) // 1
 ```

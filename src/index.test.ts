@@ -88,3 +88,15 @@ describe("increment", () => {
     )
   })
 })
+
+describe("compare ", () => {
+  const cases: Array<[input: DotaVersion, other: DotaVersion, expected: number]> = [
+    [new DotaVersion(7, 0, 0), new DotaVersion(6, 21, 2), 1],
+    [new DotaVersion(6, 21, 2), new DotaVersion(6, 21, 2), 0],
+    [new DotaVersion(6, 0, 2), new DotaVersion(6, 21, 2), -1],
+  ]
+
+  test.each(cases)("%j outputs %s", (input, other, expected) => {
+    expect(input.compare(other)).toEqual(expected)
+  })
+})

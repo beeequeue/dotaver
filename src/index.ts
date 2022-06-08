@@ -66,6 +66,13 @@ export class DotaVersion {
     return new DotaVersion(this.major + major, this.minor + minor, this.patch + patch)
   }
 
+  compare(other: DotaVersion) {
+    const a = this.toNumber()
+    const b = other.toNumber()
+
+    return Math.sign(a - b)
+  }
+
   toNumber() {
     return this.major * 10_000 + this.minor * 100 + this.patch
   }
