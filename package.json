@@ -23,10 +23,13 @@
     "lint": "eslint src",
     "test": "vitest run",
     "typecheck": "tsc --noEmit --project tsconfig.json",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "release": "pnpm build && pnpm changeset publish"
   },
   "devDependencies": {
     "@beequeue/eslint-plugin": "0.6.0",
+    "@changesets/changelog-github": "0.4.4",
+    "@changesets/cli": "2.22.0",
     "@tsconfig/node16": "1.0.2",
     "c8": "7.11.3",
     "dotenv": "16.0.1",
