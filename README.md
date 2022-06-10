@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/v/dotaver)](https://www.npmjs.com/package/dotaver)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/dotaver)
 ![node-current](https://img.shields.io/node/v/dotaver)
+![Codecov](https://img.shields.io/codecov/c/github/BeeeQueue/dotaver?token=XUED4J0ZY3)
 
 Semver but for Dota 2 patch versions
 
