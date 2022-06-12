@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@beequeue/eslint-plugin': 0.6.0
   '@changesets/changelog-github': 0.4.5
-  '@changesets/cli': 2.22.0
+  '@changesets/cli': 2.23.0
   '@tsconfig/node16': 1.0.3
   c8: 7.11.3
   dotenv: 16.0.1
@@ -18,7 +18,7 @@ specifiers:
 devDependencies:
   '@beequeue/eslint-plugin': 0.6.0_fbjqqrcmu5kf5fxbq7jfq7ql3a
   '@changesets/changelog-github': 0.4.5
-  '@changesets/cli': 2.22.0
+  '@changesets/cli': 2.23.0
   '@tsconfig/node16': 1.0.3
   c8: 7.11.3
   dotenv: 16.0.1
@@ -119,8 +119,8 @@ packages:
       semver: 5.7.1
     dev: true
 
-  /@changesets/assemble-release-plan/5.1.2:
-    resolution: {integrity: sha512-nOFyDw4APSkY/vh5WNwGEtThPgEjVShp03PKVdId6wZTJALVcAALCSLmDRfeqjE2z9EsGJb7hZdDlziKlnqZgw==}
+  /@changesets/assemble-release-plan/5.1.3:
+    resolution: {integrity: sha512-I+TTkUoqvxBEuDLoJfJYKDXIJ+nyiTbVJ8KGhpXEsLq4N/ms/AStSbouJwF2d/p3cB+RCPr5+gXh31GSN4kA7w==}
     dependencies:
       '@babel/runtime': 7.18.3
       '@changesets/errors': 0.1.4
@@ -146,18 +146,18 @@ packages:
       - encoding
     dev: true
 
-  /@changesets/cli/2.22.0:
-    resolution: {integrity: sha512-4bA3YoBkd5cm5WUxmrR2N9WYE7EeQcM+R3bVYMUj2NvffkQVpU3ckAI+z8UICoojq+HRl2OEwtz+S5UBmYY4zw==}
+  /@changesets/cli/2.23.0:
+    resolution: {integrity: sha512-Gi3tMi0Vr6eNd8GX6q73tbOm9XOzGfuLEm4PYVeWG2neg5DlRGNOjYwrFULJ/An3N9MHtHn4r5h1Qvnju9Ijug==}
     hasBin: true
     dependencies:
       '@babel/runtime': 7.18.3
       '@changesets/apply-release-plan': 6.0.0
-      '@changesets/assemble-release-plan': 5.1.2
+      '@changesets/assemble-release-plan': 5.1.3
       '@changesets/changelog-git': 0.1.11
       '@changesets/config': 2.0.0
       '@changesets/errors': 0.1.4
       '@changesets/get-dependents-graph': 1.3.2
-      '@changesets/get-release-plan': 3.0.8
+      '@changesets/get-release-plan': 3.0.9
       '@changesets/git': 1.3.2
       '@changesets/logger': 0.0.5
       '@changesets/pre': 1.0.11
@@ -167,6 +167,7 @@ packages:
       '@manypkg/get-packages': 1.1.3
       '@types/is-ci': 3.0.0
       '@types/semver': 6.2.3
+      ansi-colors: 4.1.3
       chalk: 2.4.2
       enquirer: 2.3.6
       external-editor: 3.1.0
@@ -181,7 +182,7 @@ packages:
       semver: 5.7.1
       spawndamnit: 2.0.0
       term-size: 2.2.1
-      tty-table: 2.8.13
+      tty-table: 4.1.6
     dev: true
 
   /@changesets/config/2.0.0:
@@ -221,11 +222,11 @@ packages:
       - encoding
     dev: true
 
-  /@changesets/get-release-plan/3.0.8:
-    resolution: {integrity: sha512-TJYiWNuP0Lzu2dL/KHuk75w7TkiE5HqoYirrXF7SJIxkhlgH9toQf2C7IapiFTObtuF1qDN8HJAX1CuIOwXldg==}
+  /@changesets/get-release-plan/3.0.9:
+    resolution: {integrity: sha512-5C1r4DcOjVxcCvPmXpymeyT6mdSTLCNiB2L+5uf19BRkDKndJdIQorH5Fe2XBR2nHUcZQFT+2TXDzCepat969w==}
     dependencies:
       '@babel/runtime': 7.18.3
-      '@changesets/assemble-release-plan': 5.1.2
+      '@changesets/assemble-release-plan': 5.1.3
       '@changesets/config': 2.0.0
       '@changesets/pre': 1.0.11
       '@changesets/read': 0.5.5
@@ -860,14 +861,6 @@ packages:
       ansi-styles: 3.2.1
       escape-string-regexp: 1.0.5
       supports-color: 5.5.0
-    dev: true
-
-  /chalk/3.0.0:
-    resolution: {integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==}
-    engines: {node: '>=8'}
-    dependencies:
-      ansi-styles: 4.3.0
-      supports-color: 7.2.0
     dev: true
 
   /chalk/4.1.2:
@@ -2468,6 +2461,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /kleur/4.1.4:
+    resolution: {integrity: sha512-8QADVssbrFjivHWQU7KkMgptGTl6WAcSdlbBPY4uNF+mWr6DGcKrvY2w4FQJoXch7+fKMjj0dRrL75vk3k23OA==}
+    engines: {node: '>=6'}
+    dev: true
+
   /language-subtag-registry/0.3.21:
     resolution: {integrity: sha512-L0IqwlIXjilBVVYKFT37X9Ih11Um5NEl9cbJIuU/SwP/zEEAbBPOnEeeuxVMf45ydWQRDQN3Nqc96OgbH1K+Pg==}
     dev: true
@@ -3412,11 +3410,12 @@ packages:
       is-fullwidth-code-point: 4.0.0
     dev: true
 
-  /smartwrap/1.2.5:
-    resolution: {integrity: sha512-bzWRwHwu0RnWjwU7dFy7tF68pDAx/zMSu3g7xr9Nx5J0iSImYInglwEVExyHLxXljy6PWMjkSAbwF7t2mPnRmg==}
-    deprecated: Backported compatibility to node > 6
+  /smartwrap/2.0.2:
+    resolution: {integrity: sha512-vCsKNQxb7PnCNd2wY1WClWifAc2lwqsG8OaswpJkVJsvMGcnEntdTCDajZCkk93Ay1U3t/9puJmb525Rg5MZBA==}
+    engines: {node: '>=6'}
     hasBin: true
     dependencies:
+      array.prototype.flat: 1.3.0
       breakword: 1.0.5
       grapheme-splitter: 1.0.4
       strip-ansi: 6.0.1
@@ -3466,7 +3465,7 @@ packages:
     dev: true
 
   /sprintf-js/1.0.3:
-    resolution: {integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=}
+    resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: true
 
   /stream-transform/2.1.3:
@@ -3746,17 +3745,18 @@ packages:
       typescript: 4.7.3
     dev: true
 
-  /tty-table/2.8.13:
-    resolution: {integrity: sha512-eVV/+kB6fIIdx+iUImhXrO22gl7f6VmmYh0Zbu6C196fe1elcHXd7U6LcLXu0YoVPc2kNesWiukYcdK8ZmJ6aQ==}
-    engines: {node: '>=8.16.0'}
+  /tty-table/4.1.6:
+    resolution: {integrity: sha512-kRj5CBzOrakV4VRRY5kUWbNYvo/FpOsz65DzI5op9P+cHov3+IqPbo1JE1ZnQGkHdZgNFDsrEjrfqqy/Ply9fw==}
+    engines: {node: '>=8.0.0'}
     hasBin: true
     dependencies:
-      chalk: 3.0.0
+      chalk: 4.1.2
       csv: 5.5.3
-      smartwrap: 1.2.5
+      kleur: 4.1.4
+      smartwrap: 2.0.2
       strip-ansi: 6.0.1
       wcwidth: 1.0.1
-      yargs: 15.4.1
+      yargs: 17.5.1
     dev: true
 
   /type-check/0.4.0:
@@ -4061,6 +4061,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /yargs-parser/21.0.1:
+    resolution: {integrity: sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==}
+    engines: {node: '>=12'}
+    dev: true
+
   /yargs/15.4.1:
     resolution: {integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==}
     engines: {node: '>=8'}
@@ -4089,6 +4094,19 @@ packages:
       string-width: 4.2.3
       y18n: 5.0.8
       yargs-parser: 20.2.9
+    dev: true
+
+  /yargs/17.5.1:
+    resolution: {integrity: sha512-t6YAJcxDkNX7NFYiVtKvWUz8l+PaKTLiL63mJYWR2GnHq2gjEWISzsLp9wg3aY36dY1j+gfIEL3pIF+XlJJfbA==}
+    engines: {node: '>=12'}
+    dependencies:
+      cliui: 7.0.4
+      escalade: 3.1.1
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      string-width: 4.2.3
+      y18n: 5.0.8
+      yargs-parser: 21.0.1
     dev: true
 
   /yocto-queue/0.1.0:
