@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@beequeue/eslint-plugin': 0.6.0
-  '@changesets/changelog-github': 0.4.4
+  '@changesets/changelog-github': 0.4.5
   '@changesets/cli': 2.22.0
   '@tsconfig/node16': 1.0.3
   c8: 7.11.3
@@ -17,7 +17,7 @@ specifiers:
 
 devDependencies:
   '@beequeue/eslint-plugin': 0.6.0_fbjqqrcmu5kf5fxbq7jfq7ql3a
-  '@changesets/changelog-github': 0.4.4
+  '@changesets/changelog-github': 0.4.5
   '@changesets/cli': 2.22.0
   '@tsconfig/node16': 1.0.3
   c8: 7.11.3
@@ -136,10 +136,10 @@ packages:
       '@changesets/types': 5.0.0
     dev: true
 
-  /@changesets/changelog-github/0.4.4:
-    resolution: {integrity: sha512-htSILqCkyYtTB5/LoVKwx7GCJQGxAiBcYbfUKWiz/QoDARuM01owYtMXhV6/iytJZq/Dqqz3PjMZUNB4MphpbQ==}
+  /@changesets/changelog-github/0.4.5:
+    resolution: {integrity: sha512-J36QJml3mXYm88PLY2qGepmb7j6LA3NM/wuUy6XBwh14qzVTRek+3Xww5oqeZhpK5lK8ELxGahdhSdYQzMv0kA==}
     dependencies:
-      '@changesets/get-github-info': 0.5.0
+      '@changesets/get-github-info': 0.5.1
       '@changesets/types': 5.0.0
       dotenv: 8.6.0
     transitivePeerDependencies:
@@ -212,8 +212,8 @@ packages:
       semver: 5.7.1
     dev: true
 
-  /@changesets/get-github-info/0.5.0:
-    resolution: {integrity: sha512-vm5VgHwrxkMkUjFyn3UVNKLbDp9YMHd3vMf1IyJoa/7B+6VpqmtAaXyDS0zBLfN5bhzVCHrRnj4GcZXXcqrFTw==}
+  /@changesets/get-github-info/0.5.1:
+    resolution: {integrity: sha512-w2yl3AuG+hFuEEmT6j1zDlg7GQLM/J2UxTmk0uJBMdRqHni4zXGe/vUlPfLom5KfX3cRfHc0hzGvloDPjWFNZw==}
     dependencies:
       dataloader: 1.4.0
       node-fetch: 2.6.7
@@ -3660,7 +3660,7 @@ packages:
     dev: true
 
   /tr46/0.0.3:
-    resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: true
 
   /tr46/1.0.1:
