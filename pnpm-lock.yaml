@@ -8,7 +8,7 @@ specifiers:
   c8: 7.11.3
   dotenv: 16.0.1
   eslint: 8.17.0
-  lint-staged: 13.0.1
+  lint-staged: 13.0.2
   prettier: 2.7.1
   simple-git-hooks: 2.8.0
   tsup: 6.1.2
@@ -23,7 +23,7 @@ devDependencies:
   c8: 7.11.3
   dotenv: 16.0.1
   eslint: 8.17.0
-  lint-staged: 13.0.1
+  lint-staged: 13.0.2
   prettier: 2.7.1
   simple-git-hooks: 2.8.0
   tsup: 6.1.2_typescript@4.7.3
@@ -2493,8 +2493,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/13.0.1:
-    resolution: {integrity: sha512-Ykaf4QTi0a02BF7cnq7JIPGOJxH4TkNMWhSlJdH9wOekd0X+gog47Jfh/0L31DqZe5AiydLGC7LkPqpaNm+Kvg==}
+  /lint-staged/13.0.2:
+    resolution: {integrity: sha512-qQLfLTh9z34eMzfEHENC+QBskZfxjomrf+snF3xJ4BzilORbD989NLqQ00ughsF/A+PT41e87+WsMFabf9++pQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -3631,7 +3631,7 @@ packages:
     dev: true
 
   /through/2.3.8:
-    resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
+    resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
     dev: true
 
   /tinypool/0.1.3:
