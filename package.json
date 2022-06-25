@@ -51,7 +51,7 @@
     "c8": "7.11.3",
     "dotenv": "16.0.1",
     "eslint": "8.18.0",
-    "lint-staged": "13.0.2",
+    "lint-staged": "13.0.3",
     "prettier": "2.7.1",
     "simple-git-hooks": "2.8.0",
     "tsup": "6.1.2",
