@@ -48,7 +48,7 @@
     "@changesets/changelog-github": "0.4.5",
     "@changesets/cli": "2.23.2",
     "@tsconfig/node16": "1.0.3",
-    "c8": "7.11.3",
+    "c8": "7.12.0",
     "dotenv": "16.0.1",
     "eslint": "8.20.0",
     "lint-staged": "13.0.3",
