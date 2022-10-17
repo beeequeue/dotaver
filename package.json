@@ -12,7 +12,7 @@
     "number"
   ],
   "license": "MIT",
-  "packageManager": "pnpm@7.13.3",
+  "packageManager": "pnpm@7.13.5",
   "engines": {
     "node": ">=16.15"
   },
@@ -48,7 +48,7 @@
     "@changesets/changelog-github": "0.4.7",
     "@changesets/cli": "2.25.0",
     "@tsconfig/node16": "1.0.3",
-    "@vitest/coverage-c8": "0.24.0",
+    "@vitest/coverage-c8": "0.24.3",
     "dotenv": "16.0.3",
     "eslint": "8.25.0",
     "lint-staged": "13.0.3",
@@ -56,6 +56,6 @@
     "simple-git-hooks": "2.8.0",
     "tsup": "6.2.3",
     "typescript": "4.8.4",
-    "vitest": "0.24.0"
+    "vitest": "0.24.3"
   }
 }
