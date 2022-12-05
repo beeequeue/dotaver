@@ -12,7 +12,7 @@
     "number"
   ],
   "license": "MIT",
-  "packageManager": "pnpm@7.17.1",
+  "packageManager": "pnpm@7.18.0",
   "engines": {
     "node": ">=16.15"
   },
@@ -50,8 +50,8 @@
     "@tsconfig/node16": "1.0.3",
     "@vitest/coverage-c8": "0.25.3",
     "dotenv": "16.0.3",
-    "eslint": "8.28.0",
-    "lint-staged": "13.0.4",
+    "eslint": "8.29.0",
+    "lint-staged": "13.1.0",
     "prettier": "2.8.0",
     "simple-git-hooks": "2.8.1",
     "tsup": "6.5.0",
