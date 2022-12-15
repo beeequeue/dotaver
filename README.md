@@ -16,7 +16,10 @@ pnpm i dotaver
 ```
 
 ```ts
+// Node
 import { DotaVersion } from "dotaver"
+// Deno
+import { DotaVersion } from "https://esm.sh/dotaver"
 
 const version = DotaVersion.parse("7.36b")
 
