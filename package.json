@@ -47,7 +47,7 @@
     "@beequeue/eslint-plugin": "0.8.0",
     "@changesets/changelog-github": "0.4.8",
     "@changesets/cli": "2.26.1",
-    "@tsconfig/node16": "1.0.3",
+    "@tsconfig/node16": "16.1.1",
     "@vitest/coverage-c8": "0.30.1",
     "dotenv": "16.0.3",
     "eslint": "8.39.0",
