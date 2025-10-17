@@ -50,7 +50,7 @@
     "@tsconfig/node16": "16.1.1",
     "@vitest/coverage-c8": "0.30.1",
     "dotenv": "16.0.3",
-    "eslint": "8.39.0",
+    "eslint": "9.38.0",
     "lint-staged": "15.1.0",
     "prettier": "2.8.8",
     "simple-git-hooks": "2.8.1",
