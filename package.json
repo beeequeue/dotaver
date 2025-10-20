@@ -2,8 +2,12 @@
   "name": "dotaver",
   "type": "module",
   "description": "Semver but for Dota 2 patch versions",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": "BeeeQueue <adam@haglund.dev>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beeequeue/dotaver.git"
+  },
   "keywords": [
     "dota",
     "dota2",

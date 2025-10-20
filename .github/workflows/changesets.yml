@@ -8,6 +8,12 @@ on:
       - .changeset/**/*
   workflow_dispatch:
 
+permissions:
+  contents: write
+  id-token: write
+  issues: read
+  pull-requests: write
+
 jobs:
   changesets:
     runs-on: ubuntu-latest
@@ -21,6 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
         with:
+          persist-credentials: false
           fetch-depth: 0
 
       - uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
@@ -45,6 +52,9 @@ jobs:
 
       - name: Build
         run: pnpm -r run build
+
+      - name: update npm
+        run: npm i -g npm
 
       - name: Update release PR / Publish packages to `npm`
         id: changesets
