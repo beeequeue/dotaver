@@ -1,0 +1,5 @@
+---
+"dotaver": patch
+---
+
+Fix publishing

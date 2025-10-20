@@ -51,7 +51,7 @@ jobs:
         run: pnpm install --frozen-lockfile --ignore-scripts
 
       - name: Build
-        run: pnpm -r run build
+        run: node --run build
 
       - name: update npm
         run: npm i -g npm
