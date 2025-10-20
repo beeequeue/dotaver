@@ -82,9 +82,7 @@ describe("next", () => {
 
 describe("increment", () => {
   it("works", () => {
-    expect(new DotaVersion(6, 21, 1).increment(0, 2, 0)).toEqual(
-      new DotaVersion(6, 23, 1),
-    )
+    expect(new DotaVersion(6, 21, 1).increment(0, 2, 0)).toEqual(new DotaVersion(6, 23, 1))
   })
 })
 

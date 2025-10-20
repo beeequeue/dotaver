@@ -1,5 +1,5 @@
 {
-  "printWidth": 90,
+  "printWidth": 95,
   "semi": false,
   "htmlWhitespaceSensitivity": "ignore",
   "trailingComma": "all"

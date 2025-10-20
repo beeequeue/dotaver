@@ -28,7 +28,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,json5,yaml,yml,css,scss,md}": [
-      "prettier --write"
+      "prettier --experimental-cli --write"
     ]
   },
   "scripts": {
@@ -50,7 +50,7 @@
     "@vitest/coverage-v8": "4.0.0-beta.18",
     "eslint": "9.38.0",
     "lint-staged": "16.2.4",
-    "prettier": "2.8.8",
+    "prettier": "3.6.2",
     "simple-git-hooks": "2.13.1",
     "tsdown": "0.15.9",
     "vitest": "4.0.0-beta.18"
