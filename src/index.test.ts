@@ -1,4 +1,4 @@
-import { describe, expect, test } from "vitest"
+import { describe, expect, it } from "vitest"
 
 import { DotaPatchType, DotaVersion } from "./index"
 
@@ -16,11 +16,11 @@ describe("parse", () => {
     ["7.36g", new DotaVersion(7, 36, 7)],
   ]
 
-  test.each(cases)("parses '%s' correctly", (input, expected) => {
+  it.each(cases)("parses '%s' correctly", (input, expected) => {
     expect(DotaVersion.parse(input)).toEqual(expected)
   })
 
-  test("fails on bad input", () => {
+  it("fails on bad input", () => {
     expect(() => DotaVersion.parse("1337")).toThrow("Got invalid DotaVersion")
   })
 })
@@ -32,20 +32,19 @@ describe("type", () => {
     [new DotaVersion(7, 10, 1), DotaPatchType.Patch],
   ]
 
-  test.each(cases)("is correct %#", (input, expected) => {
+  it.each(cases)("is correct %#", (input, expected) => {
     expect(input.type).toEqual(expected)
   })
 })
 
 describe("toNumber", () => {
   const cases: Array<[input: DotaVersion, expected: number]> = [
-    /* eslint-disable unicorn/numeric-separators-style */
     [new DotaVersion(7, 0, 1), 70001],
     [new DotaVersion(7, 10, 0), 71000],
     [new DotaVersion(7, 10, 1), 71001],
   ]
 
-  test.each(cases)("%j outputs %s", (input, expected) => {
+  it.each(cases)("%j outputs %s", (input, expected) => {
     expect(input.toNumber()).toEqual(expected)
   })
 })
@@ -64,7 +63,7 @@ describe("toString", () => {
     [new DotaVersion(7, 36, 7), "7.36g"],
   ]
 
-  test.each(cases)("%j outputs %s", (input, expected) => {
+  it.each(cases)("%j outputs %s", (input, expected) => {
     expect(input.toString()).toEqual(expected)
   })
 })
@@ -76,13 +75,13 @@ describe("next", () => {
     [DotaPatchType.Major, new DotaVersion(7, 0, 0)],
   ]
 
-  test.each(cases)("%j outputs %s", (input, expected) => {
+  it.each(cases)("%j outputs %s", (input, expected) => {
     expect(new DotaVersion(6, 21, 1).next(input)).toEqual(expected)
   })
 })
 
 describe("increment", () => {
-  test("works", () => {
+  it("works", () => {
     expect(new DotaVersion(6, 21, 1).increment(0, 2, 0)).toEqual(
       new DotaVersion(6, 23, 1),
     )
@@ -96,7 +95,7 @@ describe("compare ", () => {
     [new DotaVersion(6, 0, 2), new DotaVersion(6, 21, 2), -1],
   ]
 
-  test.each(cases)("%j outputs %s", (input, other, expected) => {
+  it.each(cases)("%j outputs %s", (input, other, expected) => {
     expect(input.compare(other)).toEqual(expected)
   })
 })

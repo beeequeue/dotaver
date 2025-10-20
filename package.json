@@ -41,13 +41,14 @@
     "release": "pnpm build && pnpm changeset publish"
   },
   "devDependencies": {
-    "@beequeue/eslint-plugin": "0.8.0",
+    "@antfu/eslint-config": "6.0.0",
     "@changesets/changelog-github": "1.0.0-next.0",
     "@changesets/cli": "3.0.0-next.0",
     "@tsconfig/node22": "22.0.2",
     "@tsconfig/strictest": "2.0.6",
+    "@typescript/native-preview": "7.0.0-dev.20251019.1",
     "@vitest/coverage-v8": "4.0.0-beta.18",
-    "eslint": "8.39.0",
+    "eslint": "9.38.0",
     "lint-staged": "16.2.4",
     "prettier": "2.8.8",
     "simple-git-hooks": "2.13.1",
