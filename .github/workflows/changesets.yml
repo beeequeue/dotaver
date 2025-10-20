@@ -23,11 +23,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: 22
-
-      - run: corepack enable
+          package-manager-cache: false
 
       - name: find pnpm cache path
         id: cache
@@ -55,5 +55,5 @@ jobs:
           publish: pnpm changeset publish
         env:
           NPM_CONFIG_PROVENANCE: true
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: "" # Workaround. See https://github.com/changesets/changesets/issues/1152#issuecomment-3190884868

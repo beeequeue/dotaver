@@ -1,9 +1,9 @@
 {
-  "$schema": "https://unpkg.com/@changesets/config@1.8.0/schema.json",
+  "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
   "access": "public",
   "baseBranch": "main",
   "changelog": [
-    "./changelog-formatter.js",
+    "@changesets/changelog-github",
     {
       "repo": "BeeeQueue/dotaver"
     }

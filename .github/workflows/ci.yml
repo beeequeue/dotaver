@@ -34,8 +34,6 @@ jobs:
 
       - run: node --run lint
 
-      - run: node --run lint:fmt
-
   typecheck:
     runs-on: ubuntu-latest
 

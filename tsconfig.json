@@ -10,14 +10,9 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "baseUrl": "./src",
-    "paths": {
-      "~/*": ["src/*"]
-    },
     "allowImportingTsExtensions": true,
 
     // Lessen strictness
-    "importsNotUsedAsValues": "remove",
     "noImplicitReturns": false,
     "noPropertyAccessFromIndexSignature": false,
     "noUncheckedIndexedAccess": false,
