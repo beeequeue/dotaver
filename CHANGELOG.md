@@ -1,5 +1,11 @@
 # dotaver
 
+## 2.0.1
+
+### Patch Changes
+
+- [`5888dba`](https://github.com/beeequeue/dotaver/commit/5888dba5df16e15cda3f3547eb13f45244f3480a) Thanks [@beeequeue](https://github.com/beeequeue)! - Fix publishing
+
 ## 2.0.0
 
 ### Major Changes
