@@ -1,5 +1,15 @@
 # dotaver
 
+## 2.0.0
+
+### Major Changes
+
+- [`c16dffd`](https://github.com/beeequeue/dotaver/commit/c16dffd3db3ece51d17e09553e938390b0fc448c) Thanks [@beeequeue](https://github.com/beeequeue)! - Now requires Node 20+, and package is ESM only.
+
+### Patch Changes
+
+- [`c16dffd`](https://github.com/beeequeue/dotaver/commit/c16dffd3db3ece51d17e09553e938390b0fc448c) Thanks [@beeequeue](https://github.com/beeequeue)! - Removed unnecessary files from published archive
+
 ## 1.0.1
 
 ### Patch Changes
