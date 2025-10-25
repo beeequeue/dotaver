@@ -17,7 +17,7 @@
     "number"
   ],
   "license": "MIT",
-  "packageManager": "pnpm@10.18.3",
+  "packageManager": "pnpm@10.19.0",
   "engines": {
     "node": ">=22.19"
   },
@@ -51,14 +51,14 @@
     "@changesets/cli": "3.0.0-next.0",
     "@tsconfig/node22": "22.0.2",
     "@tsconfig/strictest": "2.0.6",
-    "@typescript/native-preview": "7.0.0-dev.20251019.1",
-    "@vitest/coverage-v8": "4.0.0-beta.18",
+    "@typescript/native-preview": "7.0.0-dev.20251025.1",
+    "@vitest/coverage-v8": "4.0.3",
     "eslint": "9.38.0",
-    "lint-staged": "16.2.4",
+    "lint-staged": "16.2.6",
     "prettier": "3.6.2",
     "publint": "0.3.15",
     "simple-git-hooks": "2.13.1",
     "tsdown": "0.15.9",
-    "vitest": "4.0.0-beta.18"
+    "vitest": "4.0.3"
   }
 }
