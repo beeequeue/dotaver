@@ -49,7 +49,7 @@
     "@antfu/eslint-config": "6.0.0",
     "@changesets/changelog-github": "1.0.0-next.0",
     "@changesets/cli": "3.0.0-next.0",
-    "@tsconfig/node22": "22.0.2",
+    "@tsconfig/node24": "24.0.0",
     "@tsconfig/strictest": "2.0.6",
     "@typescript/native-preview": "7.0.0-dev.20251019.1",
     "@vitest/coverage-v8": "4.0.0-beta.18",
